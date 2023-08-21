@@ -77,7 +77,7 @@ class RtdClient(RpcClient):
         """
         buf: Set[ObjectRtd] = self.rtds[rtd.name]
         buf.add(rtd)
-        self.write_log(f"新增RTD连接：{rtd.name} {rtd.field}")
+        self.write_log(f"Add RTD connection: {rtd.name} {rtd.field}")
 
         # Auto subscribe tick data
         self.subscribe(rtd.name)
@@ -89,7 +89,7 @@ class RtdClient(RpcClient):
         buf: Set[ObjectRtd] = self.rtds[self.name]
         if self in buf:
             buf.remove(rtd)
-            self.write_log(f"移除RTD连接：{rtd.name} {rtd.field}")
+            self.write_log(f"Remove RTD connection: {rtd.name} {rtd.field}")
 
 
 def init_client() -> None:

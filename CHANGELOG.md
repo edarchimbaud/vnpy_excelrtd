@@ -1,3 +1,3 @@
-# 1.0.1版本
+# Version 1.0.1
 
-1. 将模块的图标文件信息，改为完整路径字符串
+1. Change the icon file information of the module to the full path string

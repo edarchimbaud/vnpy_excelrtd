@@ -9,6 +9,7 @@ from ..engine import APP_NAME, EVENT_RTD_LOG, BaseEngine
 
 class RtdManager(QtWidgets.QWidget):
     """"""
+
     signal_log: QtCore.pyqtSignal = QtCore.pyqtSignal(Event)
 
     def __init__(self, main_engine: MainEngine, event_engine: EventEngine) -> None:
@@ -34,14 +35,14 @@ class RtdManager(QtWidgets.QWidget):
         self.client_line: QtWidgets.QLineEdit = QtWidgets.QLineEdit(str(client_path))
         self.client_line.setReadOnly(True)
 
-        copy_button: QtWidgets.QPushButton = QtWidgets.QPushButton("复制")
+        copy_button: QtWidgets.QPushButton = QtWidgets.QPushButton("Copy")
         copy_button.clicked.connect(self.copy_client_path)
 
         self.log_monitor: QtWidgets.QTextEdit = QtWidgets.QTextEdit()
         self.log_monitor.setReadOnly(True)
 
         self.port_label: QtWidgets.QLabel = QtWidgets.QLabel(
-            "使用Socket端口：请求回应9001、广播推送9002"
+            "Using socket ports: request response 9001, broadcast push 9002"
         )
 
         hbox: QtWidgets.QHBoxLayout = QtWidgets.QHBoxLayout()
