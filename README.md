@@ -19,7 +19,7 @@ The ExcelRtd module is a functional module provided by VeighNa for accessing any
 
 ## Installation
 
-The recommended installation environment is based on version 3.0.0 or higher of [[**VeighNa Studio**](https://edarchimbaud.com/veighna-website)].
+The recommended installation environment is based on version 3.0.0 or higher of [[**VeighNa Studio**](https://github.com/paperswithbacktest/vnpy)].
 
 Use the pip command directly:
 
